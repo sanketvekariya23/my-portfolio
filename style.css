@@ -431,7 +431,7 @@ nav ul li a:hover::after{
         flex-direction: column;
     }
 }
-@media (max-width: 419px){
+@media (max-width: 400px){
     .contact-container .left-contact-container i{
         margin: 00px 00px;
     }
