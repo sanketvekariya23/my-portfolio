@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal porfolio..</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d8bad95e23.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="loading images" class="logo">
+                <ul>
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#service">services</a></li>
+                    <li><a href="#contact">contact me</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Web Devloper</h1>
+                <p>hi, i am <span>sanket </span> vekariya <br>from surat,Gujrat</p>
+            </div>
+            <!-- <div class="myphoto"> <img src="myphoto.png" alt="loading"></div> -->
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="row">
+            <div class="about-left">
+                <img src="aboutphotome.jpg" class="aboutmephoto" alt="loading images">
+            </div>
+            <div class="about-right">
+                <h3 class="about-title">About me</h3>
+                <p class="about-para"> hi, i am from surat. i am studying in government engineering college modasa in
+                    semester 7th. i have strong academic background with 7.61 CPI and 7.91 CGPA.</p>
+                <div class="tabs">
+                    <p class="right-tab" onclick="opentab('skills')">Skills</p>
+                    <p class="right-tab" onclick="opentab('experience')">Experience</p>
+                    <p class="right-tab" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tabcontent activetab" id="skills">
+                    <ul>
+                        <li> <span>web developement</span> <br> web developement using html css java script</li>
+                        <li><span>database</span><br> MySql</li>
+                        <li><span>.NET</span> <br>C#</li>
+                        <li><span>Data-Science</span> <br> Python</li>
+                    </ul>
+                </div>
+                <div class="tabcontent" id="experience">
+                    <ul>
+                        <li><span>INTERN in Internpe</span> <br> completed internship in java programming during 27june
+                            2024 to
+                            12july 2024</li>
+                    </ul>
+                    <ul>
+                        <li><span>INTERN in IBM</span> <br> completed internship in data analytics during 27june 2024 to
+                            12july 2024</li>
+                    </ul>
+
+                </div>
+                <div class="tabcontent" id="education">
+                    <ul>
+                        <li><span>B.E/Computer engineering</span> <br> government engineering college moadasa in 7th sem
+                            CPI=7.61 CGPA = 7.91</li>
+                        <li> <span>XII(GHSEB)</span> <br> Shreemad Jagadguru Shree Vallbhacharya Vidhyadham
+                            Percentage=76%</li>
+                        <li><span>XI(GESB)</span><br> Divine english school Percentage=83.16</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ------------------------------services------------------------ -->
+    <div class="service-container" id="service">
+        <div class="heading">
+            <h3 class="service-title">My Serives</h3>
+        </div>
+        <div class="service-list">
+            <div class="box" id="box-1">
+                <i class="fa-solid fa-code"></i>
+                <h6 class="box-sub-heading">Web Design</h6>
+                <p class="p">Transform your digital presence with our expert web development services. Our team
+                    specializes in creating responsive, user-friendly websites tailored to your business needs.</p>
+                <a href="#">learn more</a>
+            </div>
+
+            <div class="box" id="box-2">
+                <i class="fa-solid fa-keyboard"></i>
+                <h6 class="box-sub-heading">Python Developer</h6>
+                <p class="p">Unlock the full potential of your projects with our professional Python development
+                    services. Our skilled developers specialize in building robust, scalable, and efficient applications
+                    tailored to your specific requirements.</p>
+                <a href="#">learn more</a>
+            </div>
+
+            <div class="box" id="box-3">
+                <i class="fa-solid fa-code-compare"></i>
+                <h6 class="box-sub-heading">Data analysis</h6>
+                <p class="p">Harness the power of your data with our expert data analysis services. Our team specializes
+                    in transforming raw data into actionable insights, helping you make informed business decisions.</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------contact form----------------------- -->
+
+    <div class="contact-container" id="contact">
+        <div class="left-contact-container">
+            <h3> Contact Me</h3>
+            <i class="fa-solid fa-envelope"></i> <span>sanketvekariya237@gmail.com</span> <br>
+            <i class="fa-solid fa-mobile"></i> <span>+91 8140095059</span> <br>
+
+            <a href="http://wa.me/918140095059" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/sanket-vekariya-00b85a23a/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/ll_sanket_vekariya_ll/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="resume.pdf" download class="downloadcv">download cv</a>
+        </div>
+        <div class="right-contact-container">
+            <form action="#" name="submit-to-google-sheet">
+                <input type="name" class="input" name="name" id="name" placeholder="enter your name" required><br><br>
+                <input type="email" class="input" name="email" id="email" placeholder="enter your email id"
+                    required><br><br>
+                <input type="text" class="inputMessage" name="message" id="message" placeholder="your message"
+                    required><br><br>
+                <input type="submit" value="submit" class="submit" id="submit" onclick="messagesend()">
+            </form>
+        </div>
+    </div>
+    <!-- ---------------------java script --------------------- -->
+    <script>
+        var tabcontent = document.getElementsByClassName("tabcontent");
+        function opentab(tabname) {      // when clicking any tab out of three tab content removed
+            for (tabcon of tabcontent) {
+                tabcon.classList.remove("activetab");
+            }
+            // tab content display
+            document.getElementById(tabname).classList.add("activetab");   // active tab becuse in css property active tab display block
+        }
+
+        function messagesend() {
+            alert("Messasge send successfully");
+        }
+    </script>
+    <footer>
+        <p class="footer"> Design by &copy; 2024 sanket vekariya. All rights reserved.</p>
+    </footer>
+
+    <!-- -------------------script for googlesheet contact form------------------ -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzW8WAebTv1KFGHld9IwIwMqybrL_Sk-XrAfPwNxaEtKJRNJVEgLVj-zFG9KSnfse3C/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
